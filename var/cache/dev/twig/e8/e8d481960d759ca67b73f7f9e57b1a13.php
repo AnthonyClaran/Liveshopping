@@ -1,0 +1,2268 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+use Twig\TemplateWrapper;
+
+/* components/navbarAdmin.html.twig */
+class __TwigTemplate_e8fb21df9e2d07a45d80451883202176 extends Template
+{
+    private Source $source;
+    /**
+     * @var array<string, Template>
+     */
+    private array $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "components/navbarAdmin.html.twig"));
+
+        // line 1
+        yield "<nav class=\"navbar\">
+    <div class=\"nav-links\" id=\"navLinks\">
+        <a href=\"#\" data-i18n=\"actions\" id=\"actionsLink\">Actions</a>
+    </div>
+
+    <!-- Menu déroulant pour les actions -->
+    <div class=\"dropdown-menu\" id=\"dropdownMenu\">
+        <ul class=\"actions-list\">
+            <li>
+                <a href=\"";
+        // line 10
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_dashboard");
+        yield "\" data-i18n=\"action_1\">
+                    <span class=\"action-icon\">
+                        <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                            <path d=\"M3 12L12 3L21 12V21H3V12Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>
+                            <path d=\"M9 21V12H15V21\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>
+                        </svg>
+                    </span>
+                    <div class=\"action-content\">
+                        <span class=\"action-text\">Home</span>
+                        <span class=\"action-subtitle\">Global performance summary</span>
+                    </div>
+                    <span class=\"action-arrow\">→</span>
+                </a>
+            </li>
+            <li>
+                <a href=\"";
+        // line 25
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_classement");
+        yield "\" data-i18n=\"action_1\">
+                    <span class=\"action-icon\">
+                        <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                            <path d=\"M5 16L3 5L8.5 7L12 4L15.5 7L21 5L19 16H5Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/>
+                            <path d=\"M5 16H19V19H5V16Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/>
+                        </svg>
+                    </span>
+                    <div class=\"action-content\">
+                        <span class=\"action-text\">Ranking</span>
+                        <span class=\"action-subtitle\">Loyal clients and best-selling products</span>
+                    </div>
+                    <span class=\"action-arrow\">→</span>
+                </a>
+            </li>
+            <li>
+                <a href=\"";
+        // line 40
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_objectif_mensuel");
+        yield "\" data-i18n=\"action_1\">
+                    <span class=\"action-icon\">
+                        <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                            <path d=\"M12 20V10M18 20V4M6 20V14\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>
+                        </svg>
+                    </span>
+                    <div class=\"action-content\">
+                        <span class=\"action-text\">Objective tracking</span>
+                        <span class=\"action-subtitle\">Gap detection, projection and Forecasting</span>
+                    </div>
+                    <span class=\"action-arrow\">→</span>
+                </a>
+            </li>
+            <li>
+                <a href=\"";
+        // line 54
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_stock");
+        yield "\" data-i18n=\"action_1\">
+                    <span class=\"action-icon\">
+                        <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                            <path d=\"M3 3H21V5H3V3ZM4 7H20V19H4V7ZM8 11V17H16V11H8Z\" fill=\"currentColor\"/>
+                        </svg>
+                    </span>
+                    <div class=\"action-content\">
+                        <span class=\"action-text\">Stock</span>
+                        <span class=\"action-subtitle\">Stock management</span>
+                    </div>
+                    <span class=\"action-arrow\">→</span>
+                </a>
+            </li>
+            <li>
+                <a href=\"";
+        // line 68
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_history");
+        yield "\" data-i18n=\"action_1\">
+                    <span class=\"action-icon\">
+                        <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                            <path d=\"M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z\" fill=\"currentColor\"/>
+                            <path d=\"M12.5 7H11V13L16.2 16.2L17 15L12.5 12.25V7Z\" fill=\"currentColor\"/>
+                        </svg>
+                    </span>
+                    <div class=\"action-content\">
+                        <span class=\"action-text\">History</span>
+                        <span class=\"action-subtitle\">Sales history</span>
+                    </div>
+                    <span class=\"action-arrow\">→</span>
+                </a>
+            </li>
+            <li>
+                <a href=\"";
+        // line 83
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_promotion");
+        yield "\" data-i18n=\"action_1\">
+                    <span class=\"action-icon\">
+                        <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                            <path d=\"M9 3H5C3.895 3 3 3.895 3 5V9C3 10.105 3.895 11 5 11H9C10.105 11 11 10.105 11 9V5C11 3.895 10.105 3 9 3Z\" fill=\"currentColor\"/>
+                            <path d=\"M19 3H15C13.895 3 13 3.895 13 5V9C13 10.105 13.895 11 15 11H19C20.105 11 21 10.105 21 9V5C21 3.895 20.105 3 19 3Z\" fill=\"currentColor\"/>
+                            <path d=\"M9 13H5C3.895 13 3 13.895 3 15V19C3 20.105 3.895 21 5 21H9C10.105 21 11 20.105 11 19V15C11 13.895 10.105 13 9 13Z\" fill=\"currentColor\"/>
+                            <path d=\"M19 13H15C13.895 13 13 13.895 13 15V19C13 20.105 13.895 21 15 21H19C20.105 21 21 20.105 21 19V15C21 13.895 20.105 13 19 13Z\" fill=\"currentColor\"/>
+                        </svg>
+                    </span>
+                    <div class=\"action-content\">
+                        <span class=\"action-text\">Product Management</span>
+                        <span class=\"action-subtitle\">Manage items, categories and promotions</span>
+                    </div>
+                    <span class=\"action-arrow\">→</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <span class=\"logo\">
+        <span class=\"logo-live\">Live</span>
+        <span class=\"logo-shop\">Shop</span>
+    </span>
+
+    <div class=\"right-group\">
+        <div class=\"icons\">
+            <a href=\"";
+        // line 109
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_live_form");
+        yield "\" class=\"icon\" title=\"Démarrer le live\">
+                <span class=\"icon\">
+                    <!-- Start Live Icon -->
+                    <svg width=\"38\" height=\"38\" viewBox=\"0 0 38 38\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                        <circle cx=\"19\" cy=\"19\" r=\"18\" stroke=\"#567AF4\" stroke-width=\"2\"/>
+                        <path d=\"M15 12L26 19L15 26V12Z\" fill=\"#567AF4\"/>
+                    </svg>
+                </span>
+            </a>
+            <span class=\"icon\">
+                <!-- Bulle -->
+                <svg width=\"38\" height=\"38\" viewBox=\"0 0 38 38\" fill=\"none\" stroke=\"#567AF4\" stroke-width=\"2\">
+                    <ellipse cx=\"19\" cy=\"17\" rx=\"12\" ry=\"8\" />
+                    <polyline points=\"13,25 13,29 19,25\" />
+                </svg>
+            </span>
+            <span class=\"icon burger\" id=\"burgerMenu\" aria-label=\"Toggle navigation menu\" role=\"button\" tabindex=\"0\">
+                <svg width=\"38\" height=\"38\" viewBox=\"0 0 38 38\" fill=\"none\" stroke=\"#567AF4\" stroke-width=\"2.5\" stroke-linecap=\"round\">
+                    <line x1=\"8\" y1=\"12\" x2=\"30\" y2=\"12\" />
+                    <line x1=\"8\" y1=\"19\" x2=\"30\" y2=\"19\" />
+                    <line x1=\"8\" y1=\"26\" x2=\"30\" y2=\"26\" />
+                </svg>
+            </span>
+        </div>
+    </div>
+
+    <!-- SIDE MENU -->
+    <div class=\"side-menu\" id=\"sideMenu\">
+        <div class=\"user-profile\">
+            <div class=\"user-menu\">
+                <a href=\"/users/profil\" data-i18n=\"profile\">Your profile</a>
+                <div class=\"theme-toggle-container\">
+                    <a data-i18n=\"theme\">Theme change</a>
+                    <label class=\"theme-toggle\">
+                        <input type=\"checkbox\" id=\"themeToggle\">
+                        <span class=\"slider\"></span>
+                    </label>
+                </div>
+                <div class=\"theme-toggle-container\">
+                    <span data-i18n=\"language\">Language</span>
+                    <div>
+                        <img src=\"https://flagcdn.com/fr.svg\" alt=\"Français\" width=\"20\" class=\"lang-flag\" data-lang=\"fr\" style=\"cursor:pointer; margin-right:5px;\">
+                        <img src=\"https://flagcdn.com/gb.svg\" alt=\"English\" width=\"20\" class=\"lang-flag\" data-lang=\"en\" style=\"cursor:pointer;\">
+                    </div>
+                </div>
+                <a href=\"";
+        // line 154
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+        yield "\" data-i18n=\"logout\">Log out</a>
+            </div>
+        </div>
+        <div class=\"side-menu-links\">
+            <a href=\"#\" data-i18n=\"home\">Home</a>
+            <a href=\"#\" data-i18n=\"favorites\">Favoris List</a>
+            <a href=\"#\" data-i18n=\"cart\">Cart</a>
+        </div>
+    </div>
+</nav>
+
+<style>
+    .navbar {
+        background: #231f20;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        height: 60px;
+        justify-content: space-between;
+        border-radius: 6px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2000;
+    }
+    .nav-links {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    .nav-links a {
+        color: #567AF4;
+        font-family: 'Inter', Arial, sans-serif;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        transition: color 0.2s;
+    }
+    .nav-links a:hover {
+        color: #fff;
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Inter', Arial, sans-serif;
+    }
+    .logo-live {
+        color: #567AF4;
+    }
+    .logo-shop {
+        color: #fff;
+    }
+    .search-bar {
+        background: #eee;
+        border-radius: 20px;
+        border: none;
+        padding: 6px 18px;
+        width: 160px;
+        box-shadow: 0 2px 8px rgba(86, 122, 244, 0.15);
+        font-size: 16px;
+    }
+    .icons {
+        display: flex;
+        gap: 12px;
+        margin-right: 100px;
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        cursor: pointer;
+    }
+
+    .right-group {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .side-menu {
+        position: fixed;
+        top: 60px;
+        right: -280px;
+        width: 260px;
+        height: calc(100vh - 60px);
+        background: #231f20;
+        box-shadow: -4px 0 8px rgba(0,0,0,0.3);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        transition: right 0.3s ease;
+        border-radius: 0 0 0 6px;
+        z-index: 1050;
+    }
+
+    .side-menu.active {
+        right: 0;
+    }
+
+    .side-menu-links {
+        display: none;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .side-menu-links a {
+        color: #567AF4;
+        font-family: 'Inter', Arial, sans-serif;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .user-profile {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .username {
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+    }
+
+    .user-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .user-menu a {
+        color: #567AF4;
+        text-decoration: none;
+        font-family: 'Inter', Arial, sans-serif;
+        font-size: 15px;
+        transition: color 0.2s;
+    }
+
+    .user-menu a:hover {
+        color: white;
+    }
+
+    .theme-toggle-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        font-family: 'Inter', Arial, sans-serif;
+    }
+
+    .theme-toggle-container > span {
+        color: #567AF4;
+        cursor: default; /* optionnel, si tu ne veux pas que ça ressemble à un lien cliquable */
+    }
+
+    .theme-toggle {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 24px;
+    }
+
+    .theme-toggle input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+        border-radius: 24px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: \"\";
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+    }
+
+    input:checked + .slider {
+        background-color: #567AF4;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+        .side-menu-links {
+            display: flex !important;
+        }
+    }
+
+    /* Dark theme */
+    body.dark-theme {
+        background-color: #121212;
+    }
+
+    body.dark-theme .navbar {
+        background: #ffffff;
+        color: black;
+    }
+
+    body.dark-theme .nav-links a,
+    body.dark-theme .side-menu-links a {
+        color: #567AF4;
+    }
+
+    body.dark-theme .logo-shop {
+        color: #000;
+    }
+
+    body.dark-theme .search-bar {
+        background: #000;
+        color: #eee;
+        border: 1px solid #444;
+    }
+
+    body.dark-theme .icons svg {
+        stroke: #567AF4;
+    }
+
+    body.dark-theme .side-menu {
+        background: #ffffff;
+        box-shadow: -4px 0 8px rgba(0,0,0,0.1);
+    }
+
+    body.dark-theme .username,
+    body.dark-theme .theme-toggle-container {
+        color: white;
+    }
+
+    body.dark-theme .user-menu a {
+        color: #567AF4;
+    }
+
+    body.dark-theme .user-menu a:hover {
+        color: #000;
+    }
+
+    /* Style pour le popup */
+    .dropdown-trigger {
+        display: inline-flex;
+        align-items: center;
+        padding: 12px 20px;
+        background: linear-gradient(135deg, #567AF4, #3a5bd9);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(86, 122, 244, 0.3);
+        transition: all 0.3s ease;
+    }
+
+    .dropdown-trigger:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(86, 122, 244, 0.4);
+    }
+
+    .trigger-icon {
+        margin-right: 8px;
+    }
+
+    /* Styles pour le menu déroulant */
+    .dropdown-menu {
+        position: fixed;
+        top: 90px; /* Position sous la navbar */
+        left: 20px;
+        background: #ffffff;
+        padding: 12px;
+        border-radius: 12px;
+        width: 300px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px) scale(0.95);
+        transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: 1px solid rgba(86, 122, 244, 0.1);
+    }
+
+    .dropdown-menu.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0) scale(1);
+    }
+
+    .actions-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .actions-list li {
+        border-radius: 8px;
+        overflow: hidden;
+        transition: all 0.2s ease;
+    }
+
+    .actions-list li:hover {
+        transform: translateX(4px);
+        background-color: rgba(86, 122, 244, 0.05);
+    }
+
+    .actions-list a {
+        text-decoration: none;
+        color: #333;
+        display: flex;
+        align-items: center;
+        padding: 12px 14px;
+        transition: all 0.2s ease;
+        border-radius: 8px;
+    }
+
+    .actions-list a:hover {
+        color: #567AF4;
+        background-color: rgba(86, 122, 244, 0.05);
+    }
+
+    .action-icon {
+        margin-right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #567AF4;
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        background: rgba(86, 122, 244, 0.1);
+        border-radius: 8px;
+        transition: all 0.2s ease;
+    }
+
+    .actions-list a:hover .action-icon {
+        background: rgba(86, 122, 244, 0.2);
+        transform: scale(1.05);
+    }
+
+    .action-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .action-text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .action-subtitle {
+        font-size: 12px;
+        color: #666;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+    .actions-list a:hover .action-subtitle {
+        color: rgba(86, 122, 244, 0.8);
+    }
+
+    .action-arrow {
+        color: #bbb;
+        transition: all 0.2s ease;
+        font-size: 16px;
+        margin-left: 8px;
+    }
+
+    .actions-list a:hover .action-arrow {
+        color: #567AF4;
+        transform: translateX(2px);
+    }
+
+    /* Dark theme styles */
+    body.dark-theme {
+        background-color: #1a1a1a;
+        color: #eee;
+    }
+
+    body.dark-theme .navbar {
+        background: #ffffff;
+    }
+
+    body.dark-theme .nav-links a {
+        color: #7a9aff;
+    }
+
+    body.dark-theme .nav-links a:hover {
+        background-color: rgba(122, 154, 255, 0.1);
+    }
+
+    body.dark-theme .dropdown-menu {
+        background: linear-gradient(145deg, #2d2d2d, #252525);
+    }
+
+    body.dark-theme .dropdown-header {
+        background: linear-gradient(135deg, #3a5bd9, #2a4bc4);
+    }
+
+    body.dark-theme .actions-list a {
+        background: #3a3a3a;
+        color: #eee;
+        border-color: #444;
+    }
+
+    body.dark-theme .actions-list li {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        border-color: #444;
+    }
+
+    body.dark-theme .actions-list li:hover {
+        box-shadow: 0 8px 25px rgba(86, 122, 244, 0.25);
+        border-color: rgba(86, 122, 244, 0.4);
+    }
+
+    body.dark-theme .actions-list a:hover {
+        color: #7a9aff;
+        background: rgba(86, 122, 244, 0.08);
+    }
+
+    body.dark-theme .action-icon {
+        color: #7a9aff;
+        background: rgba(122, 154, 255, 0.15);
+    }
+
+    body.dark-theme .actions-list a:hover .action-icon {
+        background: rgba(122, 154, 255, 0.25);
+    }
+
+    body.dark-theme .action-subtitle {
+        color: #aaa;
+    }
+
+    body.dark-theme .actions-list a:hover .action-subtitle {
+        color: rgba(122, 154, 255, 0.8);
+    }
+
+    body.dark-theme .actions-list a:hover .action-arrow {
+        color: #7a9aff;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const actionsLink = document.getElementById('actionsLink');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        // Positionner le menu déroulant sous le lien Actions
+        function positionDropdown() {
+            const rect = actionsLink.getBoundingClientRect();
+            dropdownMenu.style.left = 0 + 'px';
+            dropdownMenu.style.top = (rect.bottom + 10) + 'px';
+        }
+
+        // Ouvrir/fermer le menu déroulant
+        actionsLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Positionner le menu avant de l'afficher
+            positionDropdown();
+
+            // Basculer l'état ouvert/fermé
+            dropdownMenu.classList.toggle('open');
+        });
+
+        // Fermer le menu en cliquant à l'extérieur
+        document.addEventListener('click', function(e) {
+            if (dropdownMenu.classList.contains('open') &&
+                !dropdownMenu.contains(e.target) &&
+                e.target !== actionsLink) {
+                dropdownMenu.classList.remove('open');
+            }
+        });
+
+        // Fermer le menu avec la touche Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && dropdownMenu.classList.contains('open')) {
+                dropdownMenu.classList.remove('open');
+                actionsLink.focus();
+            }
+        });
+
+        // Garder le focus à l'intérieur du menu quand il est ouvert
+        dropdownMenu.addEventListener('keydown', function(e) {
+            if (e.key === 'Tab' && dropdownMenu.classList.contains('open')) {
+                const focusableElements = dropdownMenu.querySelectorAll('a[href]');
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                if (e.shiftKey) {
+                    if (document.activeElement === firstElement) {
+                        lastElement.focus();
+                        e.preventDefault();
+                    }
+                } else {
+                    if (document.activeElement === lastElement) {
+                        firstElement.focus();
+                        e.preventDefault();
+                    }
+                }
+            }
+        });
+
+        // Repositionner le menu en cas de redimensionnement
+        window.addEventListener('resize', function() {
+            if (dropdownMenu.classList.contains('open')) {
+                positionDropdown();
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const burger = document.getElementById('burgerMenu');
+        const sideMenu = document.getElementById('sideMenu');
+        const themeToggle = document.getElementById('themeToggle');
+
+        const usernameElement = document.querySelector('.username');
+        let userId = 'guest';
+        if (usernameElement && usernameElement.textContent) {
+            userId = usernameElement.textContent.trim().toLowerCase().replace(/\\s+/g, '_');
+        }
+        const userThemeKey = `user_theme_\${userId}`;
+        const savedTheme = localStorage.getItem(userThemeKey);
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeToggle.checked = true;
+        }
+
+        burger.addEventListener('click', () => sideMenu.classList.toggle('active'));
+        burger.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                sideMenu.classList.toggle('active');
+            }
+        });
+
+        themeToggle.addEventListener('change', () => {
+            const isDark = document.body.classList.toggle('dark-theme');
+            localStorage.setItem(userThemeKey, isDark ? 'dark' : 'light');
+        });
+
+        // Internationalisation
+        const translations = {
+            fr: {
+                home: 'Accueil',
+                sales_history: 'Historique des ventes',
+                items: 'Articles',
+                profile: 'Votre profil',
+                theme: 'Changer thème',
+                language: 'Langue',
+                logout: 'Déconnexion',
+                search: 'Recherche...',
+                mail: 'E-mail',
+                address: 'Adresse',
+                country: 'Pays',
+                contact: 'Contact',
+                choose_image: 'Choisir une image',
+                username: 'Nom d\\'utilisateur',
+                cancel: 'Annuler',
+                save: 'Enregistrer',
+                profil_picture: 'Photo de profil',
+                // Dashboard translations
+                period: 'Période',
+                category: 'Catégorie',
+                apply: 'Appliquer',
+                revenue: 'Chiffre d\\'affaires',
+                monthly: 'Mensuel',
+                trends: 'Tendances',
+                by_category: 'Par catégorie',
+                distribution: 'Répartition',
+                sales: 'Ventes',
+                total_turnover: 'Chiffre d\\'affaires total',
+                total_sales: 'Ventes totales',
+                average_bag: 'Panier moyen',
+                best_category: 'Meilleure catégorie',
+                // Classement page translations
+                performance_overview: 'Aperçu des performances',
+                active_products: 'produits actifs',
+                clients: 'clients',
+                top_items: 'Meilleurs articles',
+                top_clients: 'Meilleurs clients',
+                average_revenue: 'Revenu moyen',
+                average_spending: 'Dépense moyenne',
+                filter: 'Filtrer',
+                more_options: 'Plus d\\'options',
+                purchases: 'achats',
+                of_total: 'du total',
+                of_revenue: 'du chiffre d\\'affaires',
+                page: 'Page',
+                of: 'sur',
+                items: 'éléments',
+                no_sales_data: 'Aucune donnée de vente disponible',
+                no_clients_found: 'Aucun client trouvé',
+                // Historique page translations
+                start_date: 'Date début',
+                end_date: 'Date fin',
+                order_state: 'État commande',
+                payment: 'Paiement',
+                all: 'Tous',
+                paid: 'Payé',
+                unpaid: 'Non payé',
+                date: 'Date',
+                client: 'Client',
+                seller: 'Vendeur',
+                total_amount: 'Montant total',
+                sales_history: 'Historique des ventes',
+                no_sales_found: 'Aucune vente trouvée',
+                sale_details: 'Détails de la vente',
+                download_invoice: 'Télécharger la facture',
+                // HistoryDetails page translations
+                billed_to: 'Facturé à',
+                sold_by: 'Vendu par',
+                certified_seller: 'Vendeur certifié',
+                pending_payment: 'En attente de paiement',
+                product: 'Produit',
+                size: 'Taille',
+                quantity: 'Quantité',
+                unit_price: 'Prix unitaire',
+                total: 'Total',
+                total_ht: 'Total HT',
+                vat: 'TVA',
+                total_ttc: 'Total TTC',
+                // Live page translations
+                live: 'EN DIRECT',
+                description: 'Description',
+                duration: 'Durée',
+                end_stream: 'Terminer le stream',
+                technical_console: 'Console technique',
+                no_live_active: 'Aucun live en cours',
+                start_new_stream: 'Commencez un nouveau stream pour interagir avec votre audience',
+                start_live: 'Démarrer un live',
+                // LiveForm page translations
+                live_information: 'Informations du Live',
+                live_title: 'Titre du live',
+                live_description: 'Description du live...',
+                products_to_highlight: 'Produits à mettre en avant',
+                form_warning: '⚠️ Tous les champs sont obligatoires. Le live sera visible immédiatement après validation.',
+                launch_live_shopping: 'Lancer le Live Shopping',
+                // ObjectifMensuel page translations
+                average_target: 'Objectif moyen:',
+                average_achievement: 'Réalisation moyenne:',
+                revenue_evolution: 'Évolution du chiffre d\\'affaires',
+                sales_evolution: 'Évolution des ventes',
+                monthly_detail_revenue: 'Détail mensuel - Chiffre d\\'Affaires',
+                monthly_detail_sales: 'Détail mensuel - Ventes',
+                month_year: 'Mois/Année',
+                target_revenue: 'Objectif CA (€)',
+                achieved_revenue: 'CA Réalisé (€)',
+                projected_revenue: 'Projection CA (€)',
+                revenue_gap: 'Écart CA (€)',
+                revenue_achievement: 'Réalisation CA',
+                target_sales: 'Objectif Ventes',
+                achieved_sales: 'Ventes Réalisées',
+                projected_sales: 'Projection Ventes',
+                sales_gap: 'Écart Ventes',
+                sales_achievement: 'Réalisation Ventes',
+                no_goals_found: 'Aucun objectif trouvé pour cette période.',
+                // Promotion page translations
+                article_management: 'Gestion des articles',
+                add_new_category: 'Ajouter une nouvelle catégorie',
+                promo: 'Promo',
+                until: 'Jusqu\\'au',
+                units: 'unités',
+                sizes: 'Tailles:',
+                colors: 'Couleurs:',
+                no_articles_available: 'Aucun article disponible',
+                no_products_found: 'Aucun produit trouvé pour les critères sélectionnés.',
+                add_article: 'Ajouter un article',
+                add_promotion: 'Ajouter une promotion',
+                promotion_name: 'Nom de la promotion',
+                promotion_name_example: 'Ex: Soldes d\\'été',
+                discount_percentage: 'Pourcentage de réduction',
+                description_optional: 'Description (optionnel)',
+                promotion_description: 'Description de la promotion...',
+                current_price: 'Prix actuel:',
+                new_price: 'Nouveau prix:',
+                edit_item: 'Modifier l\\'article',
+                name: 'Nom',
+                item_name: 'Nom de l\\'article',
+                item_description_optional: 'Description de l\\'article (optionnel)',
+                category_name: 'Nom de la catégorie',
+                category_name_example: 'Ex: Vêtements, Chaussures, Accessoires',
+                category_description: 'Description de la catégorie...',
+                create: 'Créer',
+                // Stock page translations
+                stock_movements: 'Mouvements de stock',
+                current_stock: 'Stock actuel',
+                import_new_stock: 'Importer de nouveaux stock',
+                export_new_stock: 'Exporter de nouveaux stock',
+                movements_between: 'Mouvements entre',
+                and: 'et',
+                movements: 'mouvements',
+                entries: 'Entrées',
+                exits: 'Sorties',
+                no_movements_recorded: 'Aucun mouvement enregistré',
+                selection: 'Sélection',
+                available_stock: 'Stock disponible',
+                no_stock_available: 'Aucun stock disponible',
+                supply: 'Supply',
+                import_stock_bulk: 'Importer des stocks en masse',
+                categories_file: 'Fichier des Catégorie',
+                articles_file: 'Fichier des Articles',
+                sizes_file: 'Fichier des Tailles',
+                colors_stock_file: 'Fichier des Couleurs et Stock',
+                import: 'Importer',
+                export_stocks: 'Export des stocks',
+                quantity: 'Quantité',
+            },
+            en: {
+                home: 'Home',
+                sales_history: 'Sales History',
+                items: 'Items',
+                profile: 'Your profile',
+                theme: 'Theme change',
+                language: 'Language',
+                logout: 'Log out',
+                search: 'Search...',
+                mail: 'Email',
+                address: 'Address',
+                country: 'Country',
+                contact: 'Contact',
+                choose_image: 'Choose image',
+                username: 'Username',
+                cancel: 'Cancel',
+                save: 'Save',
+                profil_picture: 'Profile picture',
+                // Dashboard translations
+                period: 'Period',
+                category: 'Category',
+                apply: 'Apply',
+                revenue: 'Revenue',
+                monthly: 'Monthly',
+                trends: 'Trends',
+                by_category: 'By category',
+                distribution: 'Distribution',
+                sales: 'Sales',
+                total_turnover: 'Total turnover',
+                total_sales: 'Total sales',
+                average_bag: 'Average bag',
+                best_category: 'Best category',
+                // Classement page translations
+                performance_overview: 'Overview of Performance',
+                active_products: 'active products',
+                clients: 'clients',
+                top_items: 'Top Items',
+                top_clients: 'Top Clients',
+                average_revenue: 'Average revenue',
+                average_spending: 'Average spending',
+                filter: 'Filter',
+                more_options: 'More options',
+                purchases: 'purchases',
+                of_total: 'of total',
+                of_revenue: 'of revenue',
+                page: 'Page',
+                of: 'of',
+                items: 'items',
+                no_sales_data: 'No sales data available',
+                no_clients_found: 'No clients found',
+                // Historique page translations
+                start_date: 'Start date',
+                end_date: 'End date',
+                order_state: 'Order state',
+                payment: 'Payment',
+                all: 'All',
+                paid: 'Paid',
+                unpaid: 'Unpaid',
+                date: 'Date',
+                client: 'Client',
+                seller: 'Seller',
+                total_amount: 'Total amount',
+                sales_history: 'Sales History',
+                no_sales_found: 'No sales found',
+                sale_details: 'Sale details',
+                download_invoice: 'Download the invoice',
+                // HistoryDetails page translations
+                billed_to: 'Billed to',
+                sold_by: 'Sold by',
+                certified_seller: 'Certified seller',
+                pending_payment: 'Payment pending',
+                product: 'Product',
+                size: 'Size',
+                quantity: 'Quantity',
+                unit_price: 'Unit price',
+                total: 'Total',
+                total_ht: 'Total ex VAT',
+                vat: 'VAT',
+                total_ttc: 'Total inc VAT',
+                // Live page translations
+                live: 'LIVE',
+                description: 'Description',
+                duration: 'Duration',
+                end_stream: 'End stream',
+                technical_console: 'Technical console',
+                no_live_active: 'No live active',
+                start_new_stream: 'Start a new stream to interact with your audience',
+                start_live: 'Start a live',
+                // LiveForm page translations
+                live_information: 'Live Information',
+                live_title: 'Live title',
+                live_description: 'Live description...',
+                products_to_highlight: 'Products to highlight',
+                form_warning: '⚠️ All fields are required. The live will be visible immediately after validation.',
+                launch_live_shopping: 'Launch Live Shopping',
+                // ObjectifMensuel page translations
+                average_target: 'Average target:',
+                average_achievement: 'Average achievement:',
+                revenue_evolution: 'Revenue evolution',
+                sales_evolution: 'Sales evolution',
+                monthly_detail_revenue: 'Monthly detail - Revenue',
+                monthly_detail_sales: 'Monthly detail - Sales',
+                month_year: 'Month/Year',
+                target_revenue: 'Target Revenue (€)',
+                achieved_revenue: 'Achieved Revenue (€)',
+                projected_revenue: 'Projected Revenue (€)',
+                revenue_gap: 'Revenue Gap (€)',
+                revenue_achievement: 'Revenue Achievement',
+                target_sales: 'Target Sales',
+                achieved_sales: 'Achieved Sales',
+                projected_sales: 'Projected Sales',
+                sales_gap: 'Sales Gap',
+                sales_achievement: 'Sales Achievement',
+                no_goals_found: 'No goals found for this period.',
+                // Promotion page translations
+                article_management: 'Article Management',
+                add_new_category: 'Add new category',
+                promo: 'Promo',
+                until: 'Until',
+                units: 'units',
+                sizes: 'Sizes:',
+                colors: 'Colors:',
+                no_articles_available: 'No articles available',
+                no_products_found: 'No products found for selected criteria.',
+                add_article: 'Add article',
+                add_promotion: 'Add promotion',
+                promotion_name: 'Promotion name',
+                promotion_name_example: 'Ex: Summer Sale',
+                discount_percentage: 'Discount percentage',
+                description_optional: 'Description (optional)',
+                promotion_description: 'Promotion description...',
+                current_price: 'Current price:',
+                new_price: 'New price:',
+                edit_item: 'Edit item',
+                name: 'Name',
+                item_name: 'Item name',
+                item_description_optional: 'Item description (optional)',
+                category_name: 'Category name',
+                category_name_example: 'Ex: Clothing, Shoes, Accessories',
+                category_description: 'Category description...',
+                create: 'Create',
+                // Stock page translations
+                stock_movements: 'Stock movements',
+                current_stock: 'Current stock',
+                import_new_stock: 'Import new stock',
+                export_new_stock: 'Export new stock',
+                movements_between: 'Movements between',
+                and: 'and',
+                movements: 'movements',
+                entries: 'Entries',
+                exits: 'Exits',
+                no_movements_recorded: 'No movements recorded',
+                selection: 'Selection',
+                available_stock: 'Available stock',
+                no_stock_available: 'No stock available',
+                supply: 'Supply',
+                import_stock_bulk: 'Import stock in bulk',
+                categories_file: 'Categories file',
+                articles_file: 'Articles file',
+                sizes_file: 'Sizes file',
+                colors_stock_file: 'Colors and Stock file',
+                import: 'Import',
+                export_stocks: 'Export stocks',
+                quantity: 'Quantity',
+            }
+        };
+
+        function setLanguage(lang) {
+            localStorage.setItem('site_language', lang);
+            const dict = translations[lang];
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) el.textContent = dict[key];
+            });
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (dict[key]) el.setAttribute('placeholder', dict[key]);
+            });
+        }
+
+        // Set language from localStorage or default to English
+        const savedLang = localStorage.getItem('site_language') || 'en';
+        setLanguage(savedLang);
+
+        // Flag click event
+        document.querySelectorAll('.lang-flag').forEach(flag => {
+            flag.addEventListener('click', () => {
+                const lang = flag.getAttribute('data-lang');
+                setLanguage(lang);
+            });
+        });
+    });
+</script>
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        yield from [];
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName(): string
+    {
+        return "components/navbarAdmin.html.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable(): bool
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo(): array
+    {
+        return array (  221 => 154,  173 => 109,  144 => 83,  126 => 68,  109 => 54,  92 => 40,  74 => 25,  56 => 10,  45 => 1,);
+    }
+
+    public function getSourceContext(): Source
+    {
+        return new Source("<nav class=\"navbar\">
+    <div class=\"nav-links\" id=\"navLinks\">
+        <a href=\"#\" data-i18n=\"actions\" id=\"actionsLink\">Actions</a>
+    </div>
+
+    <!-- Menu déroulant pour les actions -->
+    <div class=\"dropdown-menu\" id=\"dropdownMenu\">
+        <ul class=\"actions-list\">
+            <li>
+                <a href=\"{{ path('app_dashboard') }}\" data-i18n=\"action_1\">
+                    <span class=\"action-icon\">
+                        <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                            <path d=\"M3 12L12 3L21 12V21H3V12Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>
+                            <path d=\"M9 21V12H15V21\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>
+                        </svg>
+                    </span>
+                    <div class=\"action-content\">
+                        <span class=\"action-text\">Home</span>
+                        <span class=\"action-subtitle\">Global performance summary</span>
+                    </div>
+                    <span class=\"action-arrow\">→</span>
+                </a>
+            </li>
+            <li>
+                <a href=\"{{ path('app_classement') }}\" data-i18n=\"action_1\">
+                    <span class=\"action-icon\">
+                        <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                            <path d=\"M5 16L3 5L8.5 7L12 4L15.5 7L21 5L19 16H5Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/>
+                            <path d=\"M5 16H19V19H5V16Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/>
+                        </svg>
+                    </span>
+                    <div class=\"action-content\">
+                        <span class=\"action-text\">Ranking</span>
+                        <span class=\"action-subtitle\">Loyal clients and best-selling products</span>
+                    </div>
+                    <span class=\"action-arrow\">→</span>
+                </a>
+            </li>
+            <li>
+                <a href=\"{{ path('app_objectif_mensuel') }}\" data-i18n=\"action_1\">
+                    <span class=\"action-icon\">
+                        <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                            <path d=\"M12 20V10M18 20V4M6 20V14\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>
+                        </svg>
+                    </span>
+                    <div class=\"action-content\">
+                        <span class=\"action-text\">Objective tracking</span>
+                        <span class=\"action-subtitle\">Gap detection, projection and Forecasting</span>
+                    </div>
+                    <span class=\"action-arrow\">→</span>
+                </a>
+            </li>
+            <li>
+                <a href=\"{{ path('app_stock') }}\" data-i18n=\"action_1\">
+                    <span class=\"action-icon\">
+                        <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                            <path d=\"M3 3H21V5H3V3ZM4 7H20V19H4V7ZM8 11V17H16V11H8Z\" fill=\"currentColor\"/>
+                        </svg>
+                    </span>
+                    <div class=\"action-content\">
+                        <span class=\"action-text\">Stock</span>
+                        <span class=\"action-subtitle\">Stock management</span>
+                    </div>
+                    <span class=\"action-arrow\">→</span>
+                </a>
+            </li>
+            <li>
+                <a href=\"{{ path('app_history') }}\" data-i18n=\"action_1\">
+                    <span class=\"action-icon\">
+                        <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                            <path d=\"M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z\" fill=\"currentColor\"/>
+                            <path d=\"M12.5 7H11V13L16.2 16.2L17 15L12.5 12.25V7Z\" fill=\"currentColor\"/>
+                        </svg>
+                    </span>
+                    <div class=\"action-content\">
+                        <span class=\"action-text\">History</span>
+                        <span class=\"action-subtitle\">Sales history</span>
+                    </div>
+                    <span class=\"action-arrow\">→</span>
+                </a>
+            </li>
+            <li>
+                <a href=\"{{ path('app_promotion') }}\" data-i18n=\"action_1\">
+                    <span class=\"action-icon\">
+                        <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                            <path d=\"M9 3H5C3.895 3 3 3.895 3 5V9C3 10.105 3.895 11 5 11H9C10.105 11 11 10.105 11 9V5C11 3.895 10.105 3 9 3Z\" fill=\"currentColor\"/>
+                            <path d=\"M19 3H15C13.895 3 13 3.895 13 5V9C13 10.105 13.895 11 15 11H19C20.105 11 21 10.105 21 9V5C21 3.895 20.105 3 19 3Z\" fill=\"currentColor\"/>
+                            <path d=\"M9 13H5C3.895 13 3 13.895 3 15V19C3 20.105 3.895 21 5 21H9C10.105 21 11 20.105 11 19V15C11 13.895 10.105 13 9 13Z\" fill=\"currentColor\"/>
+                            <path d=\"M19 13H15C13.895 13 13 13.895 13 15V19C13 20.105 13.895 21 15 21H19C20.105 21 21 20.105 21 19V15C21 13.895 20.105 13 19 13Z\" fill=\"currentColor\"/>
+                        </svg>
+                    </span>
+                    <div class=\"action-content\">
+                        <span class=\"action-text\">Product Management</span>
+                        <span class=\"action-subtitle\">Manage items, categories and promotions</span>
+                    </div>
+                    <span class=\"action-arrow\">→</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <span class=\"logo\">
+        <span class=\"logo-live\">Live</span>
+        <span class=\"logo-shop\">Shop</span>
+    </span>
+
+    <div class=\"right-group\">
+        <div class=\"icons\">
+            <a href=\"{{ path('admin_live_form') }}\" class=\"icon\" title=\"Démarrer le live\">
+                <span class=\"icon\">
+                    <!-- Start Live Icon -->
+                    <svg width=\"38\" height=\"38\" viewBox=\"0 0 38 38\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                        <circle cx=\"19\" cy=\"19\" r=\"18\" stroke=\"#567AF4\" stroke-width=\"2\"/>
+                        <path d=\"M15 12L26 19L15 26V12Z\" fill=\"#567AF4\"/>
+                    </svg>
+                </span>
+            </a>
+            <span class=\"icon\">
+                <!-- Bulle -->
+                <svg width=\"38\" height=\"38\" viewBox=\"0 0 38 38\" fill=\"none\" stroke=\"#567AF4\" stroke-width=\"2\">
+                    <ellipse cx=\"19\" cy=\"17\" rx=\"12\" ry=\"8\" />
+                    <polyline points=\"13,25 13,29 19,25\" />
+                </svg>
+            </span>
+            <span class=\"icon burger\" id=\"burgerMenu\" aria-label=\"Toggle navigation menu\" role=\"button\" tabindex=\"0\">
+                <svg width=\"38\" height=\"38\" viewBox=\"0 0 38 38\" fill=\"none\" stroke=\"#567AF4\" stroke-width=\"2.5\" stroke-linecap=\"round\">
+                    <line x1=\"8\" y1=\"12\" x2=\"30\" y2=\"12\" />
+                    <line x1=\"8\" y1=\"19\" x2=\"30\" y2=\"19\" />
+                    <line x1=\"8\" y1=\"26\" x2=\"30\" y2=\"26\" />
+                </svg>
+            </span>
+        </div>
+    </div>
+
+    <!-- SIDE MENU -->
+    <div class=\"side-menu\" id=\"sideMenu\">
+        <div class=\"user-profile\">
+            <div class=\"user-menu\">
+                <a href=\"/users/profil\" data-i18n=\"profile\">Your profile</a>
+                <div class=\"theme-toggle-container\">
+                    <a data-i18n=\"theme\">Theme change</a>
+                    <label class=\"theme-toggle\">
+                        <input type=\"checkbox\" id=\"themeToggle\">
+                        <span class=\"slider\"></span>
+                    </label>
+                </div>
+                <div class=\"theme-toggle-container\">
+                    <span data-i18n=\"language\">Language</span>
+                    <div>
+                        <img src=\"https://flagcdn.com/fr.svg\" alt=\"Français\" width=\"20\" class=\"lang-flag\" data-lang=\"fr\" style=\"cursor:pointer; margin-right:5px;\">
+                        <img src=\"https://flagcdn.com/gb.svg\" alt=\"English\" width=\"20\" class=\"lang-flag\" data-lang=\"en\" style=\"cursor:pointer;\">
+                    </div>
+                </div>
+                <a href=\"{{ path('app_logout') }}\" data-i18n=\"logout\">Log out</a>
+            </div>
+        </div>
+        <div class=\"side-menu-links\">
+            <a href=\"#\" data-i18n=\"home\">Home</a>
+            <a href=\"#\" data-i18n=\"favorites\">Favoris List</a>
+            <a href=\"#\" data-i18n=\"cart\">Cart</a>
+        </div>
+    </div>
+</nav>
+
+<style>
+    .navbar {
+        background: #231f20;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        height: 60px;
+        justify-content: space-between;
+        border-radius: 6px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2000;
+    }
+    .nav-links {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    .nav-links a {
+        color: #567AF4;
+        font-family: 'Inter', Arial, sans-serif;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        transition: color 0.2s;
+    }
+    .nav-links a:hover {
+        color: #fff;
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Inter', Arial, sans-serif;
+    }
+    .logo-live {
+        color: #567AF4;
+    }
+    .logo-shop {
+        color: #fff;
+    }
+    .search-bar {
+        background: #eee;
+        border-radius: 20px;
+        border: none;
+        padding: 6px 18px;
+        width: 160px;
+        box-shadow: 0 2px 8px rgba(86, 122, 244, 0.15);
+        font-size: 16px;
+    }
+    .icons {
+        display: flex;
+        gap: 12px;
+        margin-right: 100px;
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        cursor: pointer;
+    }
+
+    .right-group {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .side-menu {
+        position: fixed;
+        top: 60px;
+        right: -280px;
+        width: 260px;
+        height: calc(100vh - 60px);
+        background: #231f20;
+        box-shadow: -4px 0 8px rgba(0,0,0,0.3);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        transition: right 0.3s ease;
+        border-radius: 0 0 0 6px;
+        z-index: 1050;
+    }
+
+    .side-menu.active {
+        right: 0;
+    }
+
+    .side-menu-links {
+        display: none;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .side-menu-links a {
+        color: #567AF4;
+        font-family: 'Inter', Arial, sans-serif;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .user-profile {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .username {
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+    }
+
+    .user-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .user-menu a {
+        color: #567AF4;
+        text-decoration: none;
+        font-family: 'Inter', Arial, sans-serif;
+        font-size: 15px;
+        transition: color 0.2s;
+    }
+
+    .user-menu a:hover {
+        color: white;
+    }
+
+    .theme-toggle-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        font-family: 'Inter', Arial, sans-serif;
+    }
+
+    .theme-toggle-container > span {
+        color: #567AF4;
+        cursor: default; /* optionnel, si tu ne veux pas que ça ressemble à un lien cliquable */
+    }
+
+    .theme-toggle {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 24px;
+    }
+
+    .theme-toggle input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+        border-radius: 24px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: \"\";
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+    }
+
+    input:checked + .slider {
+        background-color: #567AF4;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+        .side-menu-links {
+            display: flex !important;
+        }
+    }
+
+    /* Dark theme */
+    body.dark-theme {
+        background-color: #121212;
+    }
+
+    body.dark-theme .navbar {
+        background: #ffffff;
+        color: black;
+    }
+
+    body.dark-theme .nav-links a,
+    body.dark-theme .side-menu-links a {
+        color: #567AF4;
+    }
+
+    body.dark-theme .logo-shop {
+        color: #000;
+    }
+
+    body.dark-theme .search-bar {
+        background: #000;
+        color: #eee;
+        border: 1px solid #444;
+    }
+
+    body.dark-theme .icons svg {
+        stroke: #567AF4;
+    }
+
+    body.dark-theme .side-menu {
+        background: #ffffff;
+        box-shadow: -4px 0 8px rgba(0,0,0,0.1);
+    }
+
+    body.dark-theme .username,
+    body.dark-theme .theme-toggle-container {
+        color: white;
+    }
+
+    body.dark-theme .user-menu a {
+        color: #567AF4;
+    }
+
+    body.dark-theme .user-menu a:hover {
+        color: #000;
+    }
+
+    /* Style pour le popup */
+    .dropdown-trigger {
+        display: inline-flex;
+        align-items: center;
+        padding: 12px 20px;
+        background: linear-gradient(135deg, #567AF4, #3a5bd9);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(86, 122, 244, 0.3);
+        transition: all 0.3s ease;
+    }
+
+    .dropdown-trigger:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(86, 122, 244, 0.4);
+    }
+
+    .trigger-icon {
+        margin-right: 8px;
+    }
+
+    /* Styles pour le menu déroulant */
+    .dropdown-menu {
+        position: fixed;
+        top: 90px; /* Position sous la navbar */
+        left: 20px;
+        background: #ffffff;
+        padding: 12px;
+        border-radius: 12px;
+        width: 300px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px) scale(0.95);
+        transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: 1px solid rgba(86, 122, 244, 0.1);
+    }
+
+    .dropdown-menu.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0) scale(1);
+    }
+
+    .actions-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .actions-list li {
+        border-radius: 8px;
+        overflow: hidden;
+        transition: all 0.2s ease;
+    }
+
+    .actions-list li:hover {
+        transform: translateX(4px);
+        background-color: rgba(86, 122, 244, 0.05);
+    }
+
+    .actions-list a {
+        text-decoration: none;
+        color: #333;
+        display: flex;
+        align-items: center;
+        padding: 12px 14px;
+        transition: all 0.2s ease;
+        border-radius: 8px;
+    }
+
+    .actions-list a:hover {
+        color: #567AF4;
+        background-color: rgba(86, 122, 244, 0.05);
+    }
+
+    .action-icon {
+        margin-right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #567AF4;
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        background: rgba(86, 122, 244, 0.1);
+        border-radius: 8px;
+        transition: all 0.2s ease;
+    }
+
+    .actions-list a:hover .action-icon {
+        background: rgba(86, 122, 244, 0.2);
+        transform: scale(1.05);
+    }
+
+    .action-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .action-text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .action-subtitle {
+        font-size: 12px;
+        color: #666;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+    .actions-list a:hover .action-subtitle {
+        color: rgba(86, 122, 244, 0.8);
+    }
+
+    .action-arrow {
+        color: #bbb;
+        transition: all 0.2s ease;
+        font-size: 16px;
+        margin-left: 8px;
+    }
+
+    .actions-list a:hover .action-arrow {
+        color: #567AF4;
+        transform: translateX(2px);
+    }
+
+    /* Dark theme styles */
+    body.dark-theme {
+        background-color: #1a1a1a;
+        color: #eee;
+    }
+
+    body.dark-theme .navbar {
+        background: #ffffff;
+    }
+
+    body.dark-theme .nav-links a {
+        color: #7a9aff;
+    }
+
+    body.dark-theme .nav-links a:hover {
+        background-color: rgba(122, 154, 255, 0.1);
+    }
+
+    body.dark-theme .dropdown-menu {
+        background: linear-gradient(145deg, #2d2d2d, #252525);
+    }
+
+    body.dark-theme .dropdown-header {
+        background: linear-gradient(135deg, #3a5bd9, #2a4bc4);
+    }
+
+    body.dark-theme .actions-list a {
+        background: #3a3a3a;
+        color: #eee;
+        border-color: #444;
+    }
+
+    body.dark-theme .actions-list li {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        border-color: #444;
+    }
+
+    body.dark-theme .actions-list li:hover {
+        box-shadow: 0 8px 25px rgba(86, 122, 244, 0.25);
+        border-color: rgba(86, 122, 244, 0.4);
+    }
+
+    body.dark-theme .actions-list a:hover {
+        color: #7a9aff;
+        background: rgba(86, 122, 244, 0.08);
+    }
+
+    body.dark-theme .action-icon {
+        color: #7a9aff;
+        background: rgba(122, 154, 255, 0.15);
+    }
+
+    body.dark-theme .actions-list a:hover .action-icon {
+        background: rgba(122, 154, 255, 0.25);
+    }
+
+    body.dark-theme .action-subtitle {
+        color: #aaa;
+    }
+
+    body.dark-theme .actions-list a:hover .action-subtitle {
+        color: rgba(122, 154, 255, 0.8);
+    }
+
+    body.dark-theme .actions-list a:hover .action-arrow {
+        color: #7a9aff;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const actionsLink = document.getElementById('actionsLink');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        // Positionner le menu déroulant sous le lien Actions
+        function positionDropdown() {
+            const rect = actionsLink.getBoundingClientRect();
+            dropdownMenu.style.left = 0 + 'px';
+            dropdownMenu.style.top = (rect.bottom + 10) + 'px';
+        }
+
+        // Ouvrir/fermer le menu déroulant
+        actionsLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Positionner le menu avant de l'afficher
+            positionDropdown();
+
+            // Basculer l'état ouvert/fermé
+            dropdownMenu.classList.toggle('open');
+        });
+
+        // Fermer le menu en cliquant à l'extérieur
+        document.addEventListener('click', function(e) {
+            if (dropdownMenu.classList.contains('open') &&
+                !dropdownMenu.contains(e.target) &&
+                e.target !== actionsLink) {
+                dropdownMenu.classList.remove('open');
+            }
+        });
+
+        // Fermer le menu avec la touche Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && dropdownMenu.classList.contains('open')) {
+                dropdownMenu.classList.remove('open');
+                actionsLink.focus();
+            }
+        });
+
+        // Garder le focus à l'intérieur du menu quand il est ouvert
+        dropdownMenu.addEventListener('keydown', function(e) {
+            if (e.key === 'Tab' && dropdownMenu.classList.contains('open')) {
+                const focusableElements = dropdownMenu.querySelectorAll('a[href]');
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                if (e.shiftKey) {
+                    if (document.activeElement === firstElement) {
+                        lastElement.focus();
+                        e.preventDefault();
+                    }
+                } else {
+                    if (document.activeElement === lastElement) {
+                        firstElement.focus();
+                        e.preventDefault();
+                    }
+                }
+            }
+        });
+
+        // Repositionner le menu en cas de redimensionnement
+        window.addEventListener('resize', function() {
+            if (dropdownMenu.classList.contains('open')) {
+                positionDropdown();
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const burger = document.getElementById('burgerMenu');
+        const sideMenu = document.getElementById('sideMenu');
+        const themeToggle = document.getElementById('themeToggle');
+
+        const usernameElement = document.querySelector('.username');
+        let userId = 'guest';
+        if (usernameElement && usernameElement.textContent) {
+            userId = usernameElement.textContent.trim().toLowerCase().replace(/\\s+/g, '_');
+        }
+        const userThemeKey = `user_theme_\${userId}`;
+        const savedTheme = localStorage.getItem(userThemeKey);
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeToggle.checked = true;
+        }
+
+        burger.addEventListener('click', () => sideMenu.classList.toggle('active'));
+        burger.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                sideMenu.classList.toggle('active');
+            }
+        });
+
+        themeToggle.addEventListener('change', () => {
+            const isDark = document.body.classList.toggle('dark-theme');
+            localStorage.setItem(userThemeKey, isDark ? 'dark' : 'light');
+        });
+
+        // Internationalisation
+        const translations = {
+            fr: {
+                home: 'Accueil',
+                sales_history: 'Historique des ventes',
+                items: 'Articles',
+                profile: 'Votre profil',
+                theme: 'Changer thème',
+                language: 'Langue',
+                logout: 'Déconnexion',
+                search: 'Recherche...',
+                mail: 'E-mail',
+                address: 'Adresse',
+                country: 'Pays',
+                contact: 'Contact',
+                choose_image: 'Choisir une image',
+                username: 'Nom d\\'utilisateur',
+                cancel: 'Annuler',
+                save: 'Enregistrer',
+                profil_picture: 'Photo de profil',
+                // Dashboard translations
+                period: 'Période',
+                category: 'Catégorie',
+                apply: 'Appliquer',
+                revenue: 'Chiffre d\\'affaires',
+                monthly: 'Mensuel',
+                trends: 'Tendances',
+                by_category: 'Par catégorie',
+                distribution: 'Répartition',
+                sales: 'Ventes',
+                total_turnover: 'Chiffre d\\'affaires total',
+                total_sales: 'Ventes totales',
+                average_bag: 'Panier moyen',
+                best_category: 'Meilleure catégorie',
+                // Classement page translations
+                performance_overview: 'Aperçu des performances',
+                active_products: 'produits actifs',
+                clients: 'clients',
+                top_items: 'Meilleurs articles',
+                top_clients: 'Meilleurs clients',
+                average_revenue: 'Revenu moyen',
+                average_spending: 'Dépense moyenne',
+                filter: 'Filtrer',
+                more_options: 'Plus d\\'options',
+                purchases: 'achats',
+                of_total: 'du total',
+                of_revenue: 'du chiffre d\\'affaires',
+                page: 'Page',
+                of: 'sur',
+                items: 'éléments',
+                no_sales_data: 'Aucune donnée de vente disponible',
+                no_clients_found: 'Aucun client trouvé',
+                // Historique page translations
+                start_date: 'Date début',
+                end_date: 'Date fin',
+                order_state: 'État commande',
+                payment: 'Paiement',
+                all: 'Tous',
+                paid: 'Payé',
+                unpaid: 'Non payé',
+                date: 'Date',
+                client: 'Client',
+                seller: 'Vendeur',
+                total_amount: 'Montant total',
+                sales_history: 'Historique des ventes',
+                no_sales_found: 'Aucune vente trouvée',
+                sale_details: 'Détails de la vente',
+                download_invoice: 'Télécharger la facture',
+                // HistoryDetails page translations
+                billed_to: 'Facturé à',
+                sold_by: 'Vendu par',
+                certified_seller: 'Vendeur certifié',
+                pending_payment: 'En attente de paiement',
+                product: 'Produit',
+                size: 'Taille',
+                quantity: 'Quantité',
+                unit_price: 'Prix unitaire',
+                total: 'Total',
+                total_ht: 'Total HT',
+                vat: 'TVA',
+                total_ttc: 'Total TTC',
+                // Live page translations
+                live: 'EN DIRECT',
+                description: 'Description',
+                duration: 'Durée',
+                end_stream: 'Terminer le stream',
+                technical_console: 'Console technique',
+                no_live_active: 'Aucun live en cours',
+                start_new_stream: 'Commencez un nouveau stream pour interagir avec votre audience',
+                start_live: 'Démarrer un live',
+                // LiveForm page translations
+                live_information: 'Informations du Live',
+                live_title: 'Titre du live',
+                live_description: 'Description du live...',
+                products_to_highlight: 'Produits à mettre en avant',
+                form_warning: '⚠️ Tous les champs sont obligatoires. Le live sera visible immédiatement après validation.',
+                launch_live_shopping: 'Lancer le Live Shopping',
+                // ObjectifMensuel page translations
+                average_target: 'Objectif moyen:',
+                average_achievement: 'Réalisation moyenne:',
+                revenue_evolution: 'Évolution du chiffre d\\'affaires',
+                sales_evolution: 'Évolution des ventes',
+                monthly_detail_revenue: 'Détail mensuel - Chiffre d\\'Affaires',
+                monthly_detail_sales: 'Détail mensuel - Ventes',
+                month_year: 'Mois/Année',
+                target_revenue: 'Objectif CA (€)',
+                achieved_revenue: 'CA Réalisé (€)',
+                projected_revenue: 'Projection CA (€)',
+                revenue_gap: 'Écart CA (€)',
+                revenue_achievement: 'Réalisation CA',
+                target_sales: 'Objectif Ventes',
+                achieved_sales: 'Ventes Réalisées',
+                projected_sales: 'Projection Ventes',
+                sales_gap: 'Écart Ventes',
+                sales_achievement: 'Réalisation Ventes',
+                no_goals_found: 'Aucun objectif trouvé pour cette période.',
+                // Promotion page translations
+                article_management: 'Gestion des articles',
+                add_new_category: 'Ajouter une nouvelle catégorie',
+                promo: 'Promo',
+                until: 'Jusqu\\'au',
+                units: 'unités',
+                sizes: 'Tailles:',
+                colors: 'Couleurs:',
+                no_articles_available: 'Aucun article disponible',
+                no_products_found: 'Aucun produit trouvé pour les critères sélectionnés.',
+                add_article: 'Ajouter un article',
+                add_promotion: 'Ajouter une promotion',
+                promotion_name: 'Nom de la promotion',
+                promotion_name_example: 'Ex: Soldes d\\'été',
+                discount_percentage: 'Pourcentage de réduction',
+                description_optional: 'Description (optionnel)',
+                promotion_description: 'Description de la promotion...',
+                current_price: 'Prix actuel:',
+                new_price: 'Nouveau prix:',
+                edit_item: 'Modifier l\\'article',
+                name: 'Nom',
+                item_name: 'Nom de l\\'article',
+                item_description_optional: 'Description de l\\'article (optionnel)',
+                category_name: 'Nom de la catégorie',
+                category_name_example: 'Ex: Vêtements, Chaussures, Accessoires',
+                category_description: 'Description de la catégorie...',
+                create: 'Créer',
+                // Stock page translations
+                stock_movements: 'Mouvements de stock',
+                current_stock: 'Stock actuel',
+                import_new_stock: 'Importer de nouveaux stock',
+                export_new_stock: 'Exporter de nouveaux stock',
+                movements_between: 'Mouvements entre',
+                and: 'et',
+                movements: 'mouvements',
+                entries: 'Entrées',
+                exits: 'Sorties',
+                no_movements_recorded: 'Aucun mouvement enregistré',
+                selection: 'Sélection',
+                available_stock: 'Stock disponible',
+                no_stock_available: 'Aucun stock disponible',
+                supply: 'Supply',
+                import_stock_bulk: 'Importer des stocks en masse',
+                categories_file: 'Fichier des Catégorie',
+                articles_file: 'Fichier des Articles',
+                sizes_file: 'Fichier des Tailles',
+                colors_stock_file: 'Fichier des Couleurs et Stock',
+                import: 'Importer',
+                export_stocks: 'Export des stocks',
+                quantity: 'Quantité',
+            },
+            en: {
+                home: 'Home',
+                sales_history: 'Sales History',
+                items: 'Items',
+                profile: 'Your profile',
+                theme: 'Theme change',
+                language: 'Language',
+                logout: 'Log out',
+                search: 'Search...',
+                mail: 'Email',
+                address: 'Address',
+                country: 'Country',
+                contact: 'Contact',
+                choose_image: 'Choose image',
+                username: 'Username',
+                cancel: 'Cancel',
+                save: 'Save',
+                profil_picture: 'Profile picture',
+                // Dashboard translations
+                period: 'Period',
+                category: 'Category',
+                apply: 'Apply',
+                revenue: 'Revenue',
+                monthly: 'Monthly',
+                trends: 'Trends',
+                by_category: 'By category',
+                distribution: 'Distribution',
+                sales: 'Sales',
+                total_turnover: 'Total turnover',
+                total_sales: 'Total sales',
+                average_bag: 'Average bag',
+                best_category: 'Best category',
+                // Classement page translations
+                performance_overview: 'Overview of Performance',
+                active_products: 'active products',
+                clients: 'clients',
+                top_items: 'Top Items',
+                top_clients: 'Top Clients',
+                average_revenue: 'Average revenue',
+                average_spending: 'Average spending',
+                filter: 'Filter',
+                more_options: 'More options',
+                purchases: 'purchases',
+                of_total: 'of total',
+                of_revenue: 'of revenue',
+                page: 'Page',
+                of: 'of',
+                items: 'items',
+                no_sales_data: 'No sales data available',
+                no_clients_found: 'No clients found',
+                // Historique page translations
+                start_date: 'Start date',
+                end_date: 'End date',
+                order_state: 'Order state',
+                payment: 'Payment',
+                all: 'All',
+                paid: 'Paid',
+                unpaid: 'Unpaid',
+                date: 'Date',
+                client: 'Client',
+                seller: 'Seller',
+                total_amount: 'Total amount',
+                sales_history: 'Sales History',
+                no_sales_found: 'No sales found',
+                sale_details: 'Sale details',
+                download_invoice: 'Download the invoice',
+                // HistoryDetails page translations
+                billed_to: 'Billed to',
+                sold_by: 'Sold by',
+                certified_seller: 'Certified seller',
+                pending_payment: 'Payment pending',
+                product: 'Product',
+                size: 'Size',
+                quantity: 'Quantity',
+                unit_price: 'Unit price',
+                total: 'Total',
+                total_ht: 'Total ex VAT',
+                vat: 'VAT',
+                total_ttc: 'Total inc VAT',
+                // Live page translations
+                live: 'LIVE',
+                description: 'Description',
+                duration: 'Duration',
+                end_stream: 'End stream',
+                technical_console: 'Technical console',
+                no_live_active: 'No live active',
+                start_new_stream: 'Start a new stream to interact with your audience',
+                start_live: 'Start a live',
+                // LiveForm page translations
+                live_information: 'Live Information',
+                live_title: 'Live title',
+                live_description: 'Live description...',
+                products_to_highlight: 'Products to highlight',
+                form_warning: '⚠️ All fields are required. The live will be visible immediately after validation.',
+                launch_live_shopping: 'Launch Live Shopping',
+                // ObjectifMensuel page translations
+                average_target: 'Average target:',
+                average_achievement: 'Average achievement:',
+                revenue_evolution: 'Revenue evolution',
+                sales_evolution: 'Sales evolution',
+                monthly_detail_revenue: 'Monthly detail - Revenue',
+                monthly_detail_sales: 'Monthly detail - Sales',
+                month_year: 'Month/Year',
+                target_revenue: 'Target Revenue (€)',
+                achieved_revenue: 'Achieved Revenue (€)',
+                projected_revenue: 'Projected Revenue (€)',
+                revenue_gap: 'Revenue Gap (€)',
+                revenue_achievement: 'Revenue Achievement',
+                target_sales: 'Target Sales',
+                achieved_sales: 'Achieved Sales',
+                projected_sales: 'Projected Sales',
+                sales_gap: 'Sales Gap',
+                sales_achievement: 'Sales Achievement',
+                no_goals_found: 'No goals found for this period.',
+                // Promotion page translations
+                article_management: 'Article Management',
+                add_new_category: 'Add new category',
+                promo: 'Promo',
+                until: 'Until',
+                units: 'units',
+                sizes: 'Sizes:',
+                colors: 'Colors:',
+                no_articles_available: 'No articles available',
+                no_products_found: 'No products found for selected criteria.',
+                add_article: 'Add article',
+                add_promotion: 'Add promotion',
+                promotion_name: 'Promotion name',
+                promotion_name_example: 'Ex: Summer Sale',
+                discount_percentage: 'Discount percentage',
+                description_optional: 'Description (optional)',
+                promotion_description: 'Promotion description...',
+                current_price: 'Current price:',
+                new_price: 'New price:',
+                edit_item: 'Edit item',
+                name: 'Name',
+                item_name: 'Item name',
+                item_description_optional: 'Item description (optional)',
+                category_name: 'Category name',
+                category_name_example: 'Ex: Clothing, Shoes, Accessories',
+                category_description: 'Category description...',
+                create: 'Create',
+                // Stock page translations
+                stock_movements: 'Stock movements',
+                current_stock: 'Current stock',
+                import_new_stock: 'Import new stock',
+                export_new_stock: 'Export new stock',
+                movements_between: 'Movements between',
+                and: 'and',
+                movements: 'movements',
+                entries: 'Entries',
+                exits: 'Exits',
+                no_movements_recorded: 'No movements recorded',
+                selection: 'Selection',
+                available_stock: 'Available stock',
+                no_stock_available: 'No stock available',
+                supply: 'Supply',
+                import_stock_bulk: 'Import stock in bulk',
+                categories_file: 'Categories file',
+                articles_file: 'Articles file',
+                sizes_file: 'Sizes file',
+                colors_stock_file: 'Colors and Stock file',
+                import: 'Import',
+                export_stocks: 'Export stocks',
+                quantity: 'Quantity',
+            }
+        };
+
+        function setLanguage(lang) {
+            localStorage.setItem('site_language', lang);
+            const dict = translations[lang];
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) el.textContent = dict[key];
+            });
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (dict[key]) el.setAttribute('placeholder', dict[key]);
+            });
+        }
+
+        // Set language from localStorage or default to English
+        const savedLang = localStorage.getItem('site_language') || 'en';
+        setLanguage(savedLang);
+
+        // Flag click event
+        document.querySelectorAll('.lang-flag').forEach(flag => {
+            flag.addEventListener('click', () => {
+                const lang = flag.getAttribute('data-lang');
+                setLanguage(lang);
+            });
+        });
+    });
+</script>
+", "components/navbarAdmin.html.twig", "/home/tikiz/Asa/LiveShopping-V2-dev/desktopLive/templates/components/navbarAdmin.html.twig");
+    }
+}
