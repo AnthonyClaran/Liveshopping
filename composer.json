@@ -7,6 +7,8 @@
         "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "ext-sodium": "*",
+        "lcobucci/jwt": "^5.5",
         "doctrine/annotations": "^2.0",
         "doctrine/dbal": "^3",
         "doctrine/doctrine-bundle": "^2.15",
@@ -38,6 +40,10 @@
         "symfony/yaml": "7.3.*"
     },
     "config": {
+        "platform": {
+            "php": "8.4.13",
+            "ext-sodium": "8.4"
+        },
         "allow-plugins": {
             "php-http/discovery": true,
             "symfony/flex": true,
