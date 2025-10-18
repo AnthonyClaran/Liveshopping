@@ -1,10 +1,10 @@
 framework:
     secret: '%env(APP_SECRET)%'
     session:
-        handler_id: 'Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler'
+        handler_id: 'pdo'
         cookie_secure: auto
         cookie_samesite: lax
-        
+
 when@test:
     framework:
         test: true
