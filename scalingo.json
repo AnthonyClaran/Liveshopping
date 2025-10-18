@@ -1,3 +1,6 @@
 {
-    "extensions":["sodium","intl","mbstring"]
+    "extensions":["sodium","intl","mbstring"],
+    "scripts": {
+    "postinstall": []
+  }
 }
